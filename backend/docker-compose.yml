@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    container_name: mcp_demo
+    ports:
+      - "6100:6100"
+    env_file:
+      - .env
+    environment:
+      - GIN_MODE=release
+      - PORT=6100
