@@ -33,6 +33,6 @@ COPY --from=builder /app/main .
 # Configure networking
 ENV GIN_HOST=0.0.0.0
 
-EXPOSE ${PORT}
+EXPOSE 8080
 
 CMD ["./main"]

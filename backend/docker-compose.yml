@@ -5,9 +5,8 @@ services:
     build: .
     container_name: mcp_demo
     ports:
-      - "6100:6100"
+      - "6100:8080"
     env_file:
       - .env
     environment:
       - GIN_MODE=release
-      - PORT=6100
